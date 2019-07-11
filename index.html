@@ -11,6 +11,43 @@
 body {
     font-family: 'Raleway';font-size: 22px;
 }
+
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#courses {
+  top: 20px;
+  background-color: black;
+}
+
+#projects {
+  top: 80px;
+  background-color: black;
+}
+
+#skills {
+  top: 140px;
+  background-color: black;
+}
+
+#more {
+  top: 200px;
+  background-color: black;
+}
+
 .boxed {
   border: 1px solid black ;
   width: 800px;
@@ -72,6 +109,14 @@ body {
 <body>
 
 <!-- Main/home content -->
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="courses">Courses</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="skills">Skills</a>
+  <a href="#" id="more">More!</a>
+</div>
+
 <center>
 <h1 style: font-family: Raleway>Hi, my name's Julia!</h1>
 <img src="/juliacwiek.github.io/computer.png" alt="Computer Girl" style="width:250px;height:250px;">
